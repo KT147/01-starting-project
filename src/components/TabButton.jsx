@@ -1,10 +1,11 @@
 
-function TabButton(props) {
+function TabButton({children, onSelect}) {
+
   return (
     <li>
-       <button>{props.children}</button> 
+       <button onClick={onSelect}>{children}</button> 
     </li>
-  )
-}
+  );
+};
 
 export default TabButton
